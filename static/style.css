@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 16px;
+  line-height: 1.6;
+}
+
+/* 見出し */
+h1 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+/* フォーム */
+.record-form {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* ボタン */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+/* 区切り線 */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 24px 0;
+}
+
+/* 記録一覧 */
+.records {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.record {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.content {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.minutes,
+.impression {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* PC 以上 */
+@media (min-width: 768px) {
+  body {
+    padding: 32px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+
+  .record-form {
+    padding: 20px;
+  }
+
+  button {
+    width: auto;
+    padding: 8px 20px;
+  }
+}
