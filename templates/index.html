@@ -10,12 +10,12 @@
 
   <h1>役に立たなかった記録</h1>
 
-  <form method="post" class="record-form">
+
+  <form method="post" action="{{ url_for('index') }}" class="record-form">
     <div class="form-group">
       <label>役に立たなかったと推察される事柄</label>
       <input type="text" name="content" required>
     </div>
-
     <div class="form-group">
       <label>それに費やした時間（分）</label>
       <input type="number" name="minutes" min="0">
@@ -25,9 +25,10 @@
       <label>振り返り</label>
       <textarea name="impression" rows="3"></textarea>
     </div>
-
     <button type="submit">こころに留める</button>
   </form>
+
+
 
   <hr>
 
